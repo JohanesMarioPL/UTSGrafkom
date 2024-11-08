@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Date Picker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Sign Up</h1>
+  <div id="signupArea">
+    <h2>Name</h2>
+    <input>
+    <h2>Password</h2>
+    <input type="password">
+    <div>
+      <h2>Date of Birth</h2>
+      <button id="date">
+        <div id="dateDisplay"></div>
+        <input type="checkbox" id="toggleDatePicker">
+        <div id="datePicker">
+          <canvas id="dateCanvas" width="350" height="166"></canvas>
+        </div>
+      </button>
+    </div>
+    <button onClick="window.location.reload()">SIGN UP</button>
+  </div>
+  <script src="logic.js"></script>
+</body>
+</html>

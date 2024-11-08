@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alphabet Picker Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Sign Up</h1>
+  <div id="signupArea">
+    <h2>Name</h2>
+    <input id="nameInput" readonly>
+    <div id="rouletteContainer">
+      <canvas id="rouletteCanvas" width="300" height="300"></canvas>
+      <button onclick="spinRoulette()">SPIN</button>
+      <button onclick="deleteLastCharacter()">DELETE LAST CHARACTER</button>
+    </div>
+    <h2>Password</h2>
+    <input type="password">
+    <button onclick="window.location.reload()">SIGN UP</button>
+  </div>
+  <script src="lib.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
